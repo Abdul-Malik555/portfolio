@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Abdul Saboor Malik</title>
+<link rel="icon" type="image/png" href="profilepic.png">
+
+<style>
+:root {
+    --bg-primary: #000000;
+    --bg-secondary: #363946;
+    --text-primary: #B1B6A6;
+    --text-secondary: #819595;
+    --accent: #696773;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.7;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: rgba(0,0,0,0.95);
+    backdrop-filter: blur(20px);
+    padding: 15px 0;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.section {
+    max-width: 900px;
+    margin: 100px auto 80px;
+    padding: 0 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 40px;
+    background: rgba(54,57,70,0.3);
+    border-radius: 20px;
+    border-left: 4px solid var(--accent);
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid var(--accent);
+    box-shadow: 0 10px 30px rgba(105,107,115,0.3);
+}
+
+h1 {
+    color: var(--text-primary);
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: var(--text-primary);
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.block {
+    margin: 50px 0;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--accent);
+    border-radius: 16px;
+    border-left: 4px solid var(--text-secondary);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.block.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skill-tag {
+    background: var(--accent);
+    color: var(--bg-primary);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mindset {
+    background: linear-gradient(135deg, var(--bg-secondary), var(--accent));
+    color: var(--text-primary);
+}
+
+.final-line {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    padding: 40px;
+    background: rgba(105,107,115,0.2);
+    border-radius: 16px;
+    margin-top: 40px;
+}
+
+footer {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    nav { gap: 20px; font-size: 14px; }
+    .section { margin: 80px auto 60px; }
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<a href="intro.html">🏠 Home</a>
+<a href="about.html">About</a>
+<a href="vision.html">Vision</a>
+<a href="review.html">Connect</a>
+</nav>
+</header>
+
+<div class="section">
+<div class="intro">
+<img src="profilepic.png" alt="Abdul Saboor Malik" class="profile-pic">
+<h1>About Me</h1>
+<p>I’m Abdul Saboor Malik, an Artificial Intelligence student at Iqra University and a Digital Marketer at Supporters Marketing.</p>
+<p>I believe real growth doesn’t come from theory alone — it comes from learning, testing, failing, and building again.</p>
+</div>
+
+<div class="block">
+<h2>📚 SSC (Foundation Stage)</h2>
+<p>My SSC phase built my foundation in discipline, consistency, and structured learning habits. It shaped my mindset toward education and self-growth.</p>
+</div>
+
+<div class="block">
+<h2>🚀 HSSC (Exploration Stage)</h2>
+<p>During HSSC, I started exploring beyond textbooks. I developed interest in technology, digital skills, and real-world systems that drive modern industries.</p>
+</div>
+
+<div class="block">
+<h2>🎓 University (AI Journey)</h2>
+<p>Currently, I am studying Artificial Intelligence at Iqra University, where I am building skills in logic, computing, and problem-solving through modern technologies.</p>
+</div>
+
+<div class="block">
+<h2>💻 Skills & Experience</h2>
+<p>I have developed practical expertise in:</p>
+<div class="skills">
+<span class="skill-tag">Social Media Marketing</span>
+<span class="skill-tag">Graphic Design</span>
+<span class="skill-tag">Canva Design</span>
+<span class="skill-tag">Content Creation</span>
+<span class="skill-tag">Digital Strategy Basics</span>
+</div>
+<p>I gained these through short courses and hands-on experimentation.</p>
+</div>
+
+<div class="block mindset">
+<h2>🔍 Mindset Statement</h2>
+<p>What sets me apart is my mindset — I don’t just learn skills, I test how they work in real markets. I analyze trends, experiment with strategies, and explore areas like dropshipping and trading to understand how systems actually perform.</p>
+</div>
+
+<p class="final-line">I’m building myself at the intersection of AI and Digital Marketing, where creativity meets data and strategy meets execution.</p>
+</div>
+
+<footer>All Copyright Reserved | Made by Abdul Saboor Malik</footer>
+
+<script>
+const blocks = document.querySelectorAll(".block");
+window.addEventListener("scroll", () => {
+    blocks.forEach(b => {
+        if (b.getBoundingClientRect().top < window.innerHeight * 0.85) {
+            b.classList.add("show");
+        }
+    });
+});
+</script>
+</body>
+</html>

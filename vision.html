@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vision - Abdul Saboor Malik</title>
+<link rel="icon" type="image/png" href="profilepic.png">
+
+<style>
+:root {
+    --bg-primary: #000000;
+    --bg-secondary: #363946;
+    --text-primary: #B1B6A6;
+    --text-secondary: #819595;
+    --accent: #696773;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.7;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: rgba(0,0,0,0.95);
+    backdrop-filter: blur(20px);
+    padding: 15px 0;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(40px, 7vw, 60px);
+    margin: 100px 0 60px 0;
+    color: var(--text-primary);
+    background: linear-gradient(135deg, var(--text-primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.box {
+    padding: 35px;
+    margin: 30px 0;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--accent);
+    border-radius: 20px;
+    border-left: 5px solid var(--text-secondary);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent), var(--text-secondary));
+}
+
+.box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(105,107,115,0.2);
+}
+
+.icon {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.final-vision {
+    background: linear-gradient(135deg, var(--bg-secondary), var(--accent));
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 50px 30px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+footer {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    nav { gap: 20px; }
+    .box { padding: 25px; }
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<a href="intro.html">🏠 Home</a>
+<a href="about.html">About</a>
+<a href="vision.html">Vision</a>
+<a href="review.html">Connect</a>
+</nav>
+</header>
+
+<h1>My Vision</h1>
+
+<div class="container">
+<div class="box">
+<span class="icon">🧠</span>
+<h2>Core Vision Statement</h2>
+<p>I aim to lead the transformation of sales and marketing through advanced AI integration, building intelligent systems that outperform traditional human-driven methods in speed, accuracy, and scalability.</p>
+</div>
+
+<div class="box">
+<span class="icon">⚙️</span>
+<h2>AI Business Systems Vision</h2>
+<p>I aim to develop AI-powered systems that automate and optimize:</p>
+<ul style="color: var(--text-secondary); margin-top: 15px;">
+<li>Customer targeting</li>
+<li>Marketing execution</li>
+<li>Sales performance</li>
+</ul>
+<p>These systems will help businesses increase efficiency, reduce costs, and improve decision-making.</p>
+</div>
+
+<div class="box">
+<span class="icon">🌍</span>
+<h2>Future Market Vision</h2>
+<p>I envision a future where AI becomes the backbone of marketing and sales — where businesses no longer rely on manual effort but instead use intelligent automation for exponential growth.</p>
+</div>
+
+<div class="box">
+<span class="icon">📊</span>
+<h2>Scalability Goal</h2>
+<p>My long-term goal is to build scalable AI-driven frameworks that help companies:</p>
+<ul style="color: var(--text-secondary); margin-top: 15px;">
+<li>Compete globally</li>
+<li>Convert data into decisions</li>
+<li>Turn strategies into measurable outcomes</li>
+</ul>
+</div>
+
+<p class="final-vision">My mission is to replace inefficiency with intelligence and turn AI into the core engine of modern business growth.</p>
+</div>
+
+<footer>All Copyright Reserved | Made by Abdul Saboor Malik</footer>
+
+<script>
+const boxes = document.querySelectorAll(".box");
+window.addEventListener("scroll", () => {
+    boxes.forEach(b => {
+        if (b.getBoundingClientRect().top < window.innerHeight * 0.85) {
+            b.classList.add("show");
+        }
+    });
+});
+</script>
+</body>
+</html>

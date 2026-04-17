@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul Saboor Malik - Home</title>
+<link rel="icon" type="image/png" href="profilepic.png">
+<style>
+:root {
+    --bg-primary: #000000;
+    --bg-secondary: #363946;
+    --text-primary: #B1B6A6;
+    --text-secondary: #819595;
+    --accent: #696773;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.95);
+    backdrop-filter: blur(20px);
+    padding: 15px 0;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav a:hover {
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.card {
+    padding: 60px 40px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--accent);
+    border-radius: 24px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+    max-width: 800px;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeUp 1.2s forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: clamp(48px, 8vw, 80px);
+    margin: 0 0 20px 0;
+    color: var(--text-primary);
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    font-size: clamp(20px, 4vw, 28px);
+    color: var(--accent);
+    margin: 0 0 30px 0;
+    font-weight: 400;
+}
+
+.hero-statement {
+    font-size: 20px;
+    color: var(--text-secondary);
+    margin: 0 0 15px 0;
+    max-width: 600px;
+}
+
+.micro-tagline {
+    font-size: 18px;
+    color: var(--accent);
+    font-style: italic;
+    margin: 0;
+}
+
+footer {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    nav { gap: 20px; }
+    .card { padding: 40px 20px; }
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<a href="intro.html">🏠 Home</a>
+<a href="about.html">About</a>
+<a href="vision.html">Vision</a>
+<a href="review.html">Connect</a>
+</nav>
+</header>
+
+<div class="hero">
+<div class="card">
+<h1>Abdul Saboor Malik</h1>
+<p class="subtitle">Digital Marketing • Artificial Intelligence • Branding</p>
+<p class="hero-statement">I build digital value at the intersection of AI, marketing, and strategy — where creativity meets execution and data drives decisions.</p>
+<p class="micro-tagline">Focused on building systems, not just skills.</p>
+</div>
+</div>
+
+<footer>
+All Copyright Reserved | Made by Abdul Saboor Malik
+</footer>
+</body>
+</html>
